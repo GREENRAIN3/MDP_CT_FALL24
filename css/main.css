@@ -1,0 +1,78 @@
+/* 全局样式 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* 标题样式 */
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.project-link {
+    font-family: 'Arial', sans-serif;  /* 设置字体，Arial 或其他字体 */
+    font-size: 24px;  /* 设置字体大小 */
+    color: #333;  /* 设置字体颜色 */
+    text-decoration: none;  /* 移除下划线 */
+    font-weight: bold;  /* 让文字加粗 */
+    text-align: center;  /* 让链接居中对齐 */
+    display: block;  /* 让链接作为块级元素，这样 text-align: center 才生效 */
+    margin-top: 20px;  /* 增加顶部的间距 */
+}
+
+/* 鼠标悬停时的效果 */
+.project-link:hover {
+    color: #0acc00;  /* 悬停时更改字体颜色 */
+    text-decoration: underline;  /* 悬停时添加下划线 */
+}
+
+/* p5.js 画布区域样式 */
+#p5-container {
+    width: 100%;
+    height: auto;  /* 你可以根据需求调整高度 */
+    margin: 0 auto;
+}
+
+/* 图片展示区域样式 */
+.images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.image-item img {
+    max-width: 45%;
+    height: auto;
+    border: 0.5px solid #000;  /* 可选：为图片添加边框 */
+}
+
+/* Diagram 容器样式 */
+.diagram-container {
+    text-align: center;
+    margin-bottom: 20px;  /* 使图片与链接有一点空间 */
+}
+
+/* 视频链接的样式 */
+.video-link-container {
+    text-align: center;  /* 链接居中 */
+    margin-top: 10px;    /* 增加顶部空间 */
+}
+
+.video-link {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    color: #0066cc;
+    text-decoration: none;  /* 去掉默认下划线 */
+    font-weight: bold;
+}
+
+/* 鼠标悬停时，链接的颜色发生变化 */
+.video-link:hover {
+    color: #ff6600;
+    text-decoration: underline;  /* 添加下划线效果 */
+}
