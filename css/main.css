@@ -10,8 +10,8 @@ body {
 /* 标题样式 */
 h1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
-    margin: 20px 0;
+    font-size: 305x;
+    margin: 30px 0;
 }
 
 .project-link {
@@ -75,4 +75,9 @@ h1 {
 .video-link:hover {
     color: #ff6600;
     text-decoration: underline;  /* 添加下划线效果 */
+}
+
+/* main.css 文件中的样式 */
+.design-explanation p {
+    line-height: 1.4; /* 行间距调整为 1.8 */
 }

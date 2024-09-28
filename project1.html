@@ -9,31 +9,144 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <!-- 引入 sketch.js 文件 -->
     <script src="sketch.js"></script>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 30px; /* 调整标题大小 */
+            font-weight: bold;
+            margin: 20px 0 10px 20px; 
+            color: #111;
+            text-align: left;
+        }
+
+        /* p5.js 画布区域 */
+        #p5-container {
+            max-width: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        /* 分割线 */
+        hr {
+            border: none;
+            border-top: 2px solid #000;
+            margin: 20px 0;
+        }
+
+        /* 调整图片和文字两列布局 */
+        .images {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            gap: 40px; /* 图片和文字间的间距 */
+        }
+
+        .image-item {
+            flex: 1; /* 设置两部分的宽度相同 */
+        }
+
+        /* 图片样式 */
+        .image-item img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #000;
+        }
+
+        /* 图片说明区域 */
+        .explanation {
+            font-size: 12px; /* 调整正文大小 */
+            line-height: 1.6;
+            margin-top: 10px;
+            color: #555;
+            text-align: left;
+        }
+
+        /* 视频链接和解释 */
+        .video-link-container {
+            font-size: 12px;
+            color: #888; /* 链接的初始灰色 */
+            margin-top: 10px;
+        }
+
+        .video-link-container a {
+            color: #888;
+            text-decoration: none;
+        }
+
+        .video-link-container a:hover {
+            color: #0acc00; /* 悬停时的绿色 */
+        }
+
+        /* 为 documentation 解释 */
+        .doc-explanation {
+            font-size: 12px; /* 调整正文大小 */
+            line-height: 1.6;
+            color: #555;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        /* 设计说明样式 */
+        .design-explanation {
+            margin-top: 20px;
+            padding: 20px;
+            font-size: 14px; /* 调整设计说明的字体大小 */
+            line-height: 1.8;
+            color: #333;
+            text-align: left;
+            border-left: 5px solid #333; /* 保留左边高亮边框 */
+        }
+    </style>
 </head>
 <body>
-    <h1>Flocking Simulation</h1>
-    
-    <!-- p5.js 画布区域 -->
-    <div id="p5-container"></div>
+    <div class="content-container">
+        <h1>Flocking Simulation</h1>
+        
+        <!-- p5.js 画布区域 -->
+        <div id="p5-container"></div>
 
-    <!-- 黑色分割线 -->
-    <hr style="border: 2px solid black; margin: 20px 0;">
-
-    <!-- 图片展示区域 -->
-    <div class="images">
-        <!-- 第一张图片：Diagram -->
-        <div class="image-item">
-            <img src="img/DIAGRAM01.png" alt="DIAGRAM01">
-            <div class="video-link-container">
-                <a href="https://www.youtube.com/watch?v=BgBsMqFHx6M" class="video-link" target="_blank">
-                    Watch Related Video
-                </a>
+        <!-- 设计说明区域 -->
+        <div class="design-explanation">
+            <h2 style="font-size: 20px;">Design Explanation</h2> <!-- 调整说明标题的大小 -->
+            <p>The Flocking Simulation is a visual representation of collective movement behaviors seen in nature, such as birds flying in formation or fish swimming in schools. 
+                The algorithm is inspired by Craig Reynolds' Boids model, which simulates three basic behaviors: alignment, cohesion, and separation. 
+                In this project, we further explore these principles by adding noise-based randomization to the movement, making the patterns more organic and dynamic.</p>
+            <p>Users can toggle between Perlin Noise-based movement and the traditional flocking behavior by interacting with the canvas. The simulation demonstrates how simple rules can lead to complex and visually captivating group behaviors, reinforcing concepts in emergent systems and computational design.</p>
         </div>
-        <!-- 第二张图片：Documentation -->
-        <div class="image-item">
-            <img src="img/documentation.png" alt="Documentation">
+
+        <!-- 黑色分割线 -->
+        <hr>
+
+        <!-- 图片展示区域 -->
+        <div class="images">
+            <!-- 第一列：Diagram 图片和说明 -->
+            <div class="image-item">
+                <img src="img/DIAGRAM01.png" alt="DIAGRAM01">
+                <div class="explanation">
+                    <p>This diagram represents the concept of flocking simulation using R = θ. The diagram visualizes how entities follow a spiraling pattern based on mathematical principles.</p>
+                    <div class="video-link-container">
+                        <a href="https://www.youtube.com/watch?v=BgBsMqFHx6M" class="video-link" target="_blank">
+                            Watch Related Video: https://www.youtube.com/watch?v=BgBsMqFHx6M
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第二列：Documentation 图片和说明 -->
+            <div class="image-item">
+                <img src="img/documentation.png" alt="Documentation">
+                <div class="doc-explanation">
+                    <p>The documentation provides an in-depth analysis of the flocking behaviors implemented in this project. It includes various tests and adjustments made to achieve realistic flocking patterns.</p>
+                </div>
+            </div>
         </div>
     </div>
-
 </body>
 </html>

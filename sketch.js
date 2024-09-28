@@ -5,7 +5,7 @@ let usePerlinNoise = false;
 let useTrail = true;  // 控制残影效果
 
 function setup() {
-  let canvas = createCanvas(1600, 800);
+  let canvas = createCanvas(1200, 600);
   canvas.parent('p5-container');
 
   bgColor = color(50, 150, 200);  // 初始背景颜色
