@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Project 2</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* General section styling */
+        .section {
+            padding: 20px;
+            border-bottom: 1px solid rgb(250, 250, 250);
+        }
+
+        /* Top section with the growing text */
+        .growing-section {
+            text-align: center;
+            font-size: 3em;
+            line-height: 1.2em;
+        }
+
+        /* Image for growing part */
+        .growing-section img {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        /* Centered YouTube video section */
+        .video-section {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        /* Make YouTube iframe responsive */
+        .video-section iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border: none;
+        }
+
+        /* Process section with five process items */
+        .process-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .process-item {
+            text-align: center;
+        }
+
+        .process-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .process-item p {
+            color: white;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        /* Project description at the bottom */
+        .description-section {
+            padding: 20px;
+            color: white;
+            font-size: 1em; /* Increased font size for visibility */
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Growing Text and Image Section -->
+    <div class="section growing-section">
+        <!-- Replace the src with your actual image path -->
+        <img src="img/growing.png" alt="Growing Image">
+    </div>
+
+    <!-- YouTube Video Section -->
+    <div class="section video-section">
+        <!-- Correct YouTube embed URL -->
+        <iframe src="https://www.youtube.com/embed/6tpK-2Ztdhc" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Process Section with Five GIFs and Descriptions -->
+    <div class="section process-section">
+        <div class="process-item">
+            <!-- Replace the src with your actual gif path -->
+            <img src="img/process5.png" alt="Process 5">
+            <p> Fine-tuning different aspects in TouchDesigner, focusing on transformations and camera movement to achieve a more detailed growing visual. This stage is critical to bring subtle changes to life through fluid motion.</p>
+        </div>
+        <div class="process-item">
+            <!-- Replace the src with your actual gif path -->
+            <img src="img/process2.png" alt="Process 2">
+            <p> Camera angles and movement adjustments in TouchDesigner were key here. By experimenting with depth and motion, I wanted to replicate the organic expansion of intricate structures.</p>
+        </div>
+        <div class="process-item">
+            <!-- Replace the src with your actual gif path -->
+            <img src="img/process3.png" alt="Process 3">
+            <p> Procedural animation was introduced to simulate dynamic and evolving patterns. Feedback loops amplified the sense of continuous growth, bringing the visuals to life.</p>
+        </div>
+        <div class="process-item">
+            <!-- Replace the src with your actual gif path -->
+            <img src="img/process4.png" alt="Process 4">
+            <p>Applying shader effects added another layer of complexity. The variations in color and noise create visuals that feel fluid and organic, always shifting and expanding.</p>
+        </div>
+        <div class="process-item">
+            <!-- Replace the src with your actual gif path -->
+            <img src="img/process1.png" alt="Process 1">
+            <p>The final step in After Effects, where all the visual elements created in TouchDesigner were brought together. By blending layers and enhancing depth, I achieved a more immersive and polished growing effect.</p>
+        </div>
+    </div>
+
+    <!-- Project Description Section -->
+    <div class="section description-section">
+        <p>
+            This project draws inspiration from Yoshi Sodeoka's rich generative art style. The theme of "growing" was explored through TouchDesigner, where I used a combination of transformations, camera adjustments, and procedural techniques to create visuals that feel alive and continuously expanding.
+        </p>
+        <p>
+            Each process builds upon the last. I began with experimenting with dynamic camera work and transformation effects, simulating natural growth patterns. As I progressed, I introduced procedural animations and shader effects, adding vibrancy and fluidity to the visuals. Finally, all elements were combined in After Effects, where the layering techniques brought a sense of depth and cohesion to the overall composition.
+        </p>
+        <p>
+            The goal of this project was to create an experience that captures the feeling of organic growth, where visuals unfold and evolve, much like nature itself.
+        </p>
+    </div>
+
+</body>
+</html>
