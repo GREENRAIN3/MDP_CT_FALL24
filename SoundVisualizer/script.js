@@ -111,3 +111,25 @@ document.getElementById("generateAlbum").addEventListener("click", updateGenreAn
 
 // 页面加载时生成 Genre 和 Description
 document.addEventListener("DOMContentLoaded", updateGenreAndDescription);
+
+// 获取 Documentation 按钮和弹窗
+const documentationBtn = document.getElementById("documentation");
+const documentationPopup = document.getElementById("documentationPopup");
+const closePopupBtn = document.getElementById("closePopup");
+
+// 点击 Documentation 按钮时显示弹窗
+documentationBtn.addEventListener("click", () => {
+    documentationPopup.style.display = "flex";
+});
+
+// 点击关闭按钮时隐藏弹窗
+closePopupBtn.addEventListener("click", () => {
+    documentationPopup.style.display = "none";
+});
+
+// 点击弹窗背景时隐藏弹窗
+documentationPopup.addEventListener("click", (event) => {
+    if (event.target === documentationPopup) {
+        documentationPopup.style.display = "none";
+    }
+});
