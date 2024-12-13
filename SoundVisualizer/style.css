@@ -1,0 +1,115 @@
+/* 全局样式 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: flex-start; /* 左对齐整个页面 */
+    align-items: flex-start;    /* 顶部对齐整个页面 */
+    text-align: left;
+    height: 100vh;
+}
+
+/* 容器样式 */
+.container {
+    padding: 20px;
+    width: 100%;
+}
+
+/* 控制栏 (搜索栏和按钮始终在左上) */
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 按钮和输入框之间的间隙 */
+    margin-bottom: 20px; /* 确保搜索栏和图片之间有足够间距 */
+    padding-bottom: 20px;
+}
+
+/* 输入框 */
+.controls input {
+    width: 200px;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0; /* 移除圆角 */
+}
+
+/* 按钮 */
+.controls .btn {
+    background-color: #000; /* 默认黑色背景 */
+    color: white; /* 默认白色文字 */
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0; /* 移除圆角 */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* 平滑过渡 */
+}
+
+.controls .btn:hover {
+    background-color: white; /* hover 时背景变为白色 */
+    color: black; /* hover 时文字变为黑色 */
+    border: 1px solid black; /* 增加边框 */
+}
+
+/* 内容区域 (图片和文字) */
+.content {
+    display: flex;
+    flex-direction: column; /* 垂直排列 */
+    align-items: flex-start; /* 左对齐 */
+    gap: 20px; /* 模块之间的间隙 */
+    margin-top: 20px; /* 添加与搜索栏的间距 */
+}
+
+/* 图片部分 */
+.album-cover {
+    width: 500px; /* 固定宽度 */
+    height: auto; /* 保持比例 */
+    max-height: 500px; /* 最大高度 */
+    border-radius: 0; /* 确保图片没有圆角 */
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* 信息部分 (Genre 和 Description) */
+#albumInfo p {
+    margin: 5px 0; /* 信息内容之间的间隙 */
+}
+
+/* 专门针对 Genre 的样式 */
+#albumInfo p:first-child {
+    font-family: "Georgia", serif; /* 修改字体为 Georgia */
+    font-size: 1.4rem; /* 增大字体 */
+    font-weight: bold; /* 加粗 */
+    color: #333; /* 修改文字颜色 */
+    margin: 10px 0; /* 增加上下间距 */
+}
+
+/* 专门针对 Description 的样式 */
+#albumInfo p:nth-child(2) {
+    font-family: "Courier New", monospace; /* 修改字体为 Courier New */
+    font-size: 1.2rem; /* 修改字体大小 */
+    font-style: italic; /* 斜体 */
+    color: #555; /* 修改文字颜色 */
+    margin: 10px 0; /* 增加上下间距 */
+}
+
+/* 对 Photo by 的额外样式更新 */
+#photographer {
+    font-family: "Arial", sans-serif; /* 修改为不同字体 */
+    font-size: 0.9rem; /* 更改字体大小 */
+    color: #555; /* 默认文字颜色 */
+}
+
+#photographer a {
+    font-weight: bold; /* 加粗链接文字 */
+    text-decoration: underline; /* 添加下划线 */
+    color: black; /* 默认链接颜色 */
+    transition: color 0.3s ease; /* 平滑过渡效果 */
+}
+
+#photographer a:hover {
+    color: white; /* hover 时链接变白 */
+}

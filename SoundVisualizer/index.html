@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Album Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 搜索栏和按钮 -->
+        <div class="controls">
+            <input type="text" id="keyword" placeholder="Enter keyword (e.g., jazz)">
+            <button class="btn" id="searchImage">Search Image</button>
+            <button class="btn" id="generateAlbum">Generate Album</button>
+        </div>
+
+        <!-- 图片和信息 -->
+        <div class="content">
+            <img id="albumCover" class="album-cover" src="" alt="Album Cover">
+            <div id="albumInfo">
+                <p id="genre">Genre: "Not Generated"</p>
+                <p id="description">Description: "Not Generated"</p>
+                <p id="photographer">Photo by <a href="#" target="_blank">Not Generated</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
